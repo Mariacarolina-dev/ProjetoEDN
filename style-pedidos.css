@@ -1,0 +1,208 @@
+/* Importação de fontes e ícones */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 450px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.top-bar {
+    padding: 1.5rem 1rem 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.top-bar h1 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #f0f2f5;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+}
+
+.search-bar i {
+    color: #888;
+    margin-right: 0.5rem;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* Conteúdo principal */
+.content {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+.restaurants-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.restaurant-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 1rem;
+}
+
+.card-info h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.card-info .status {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.queue-status {
+    font-weight: 600;
+    padding: 0.2rem 0.5rem;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.queue-status.low {
+    background-color: #4CAF50; /* Verde */
+}
+
+.queue-status.medium {
+    background-color: #FFC107; /* Amarelo */
+}
+
+.queue-status.high {
+    background-color: #F44336; /* Vermelho */
+}
+
+.card-info .address {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* Container para alinhar status e tempo */
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.25rem;
+}
+
+/* Estilo do tempo estimado de espera */
+.estimated-time {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Menu inferior */
+.bottom-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    padding: 0.5rem 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #999;
+    font-size: 0.75rem;
+    transition: color 0.3s ease;
+}
+
+.menu-item i {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.menu-item.active {
+    color: #ff5722; /* Laranja da marca */
+}
+
+.menu-item:hover {
+    color: #ff5722;
+}
+
+.queue-button {
+    width: 100%;
+    background-color: #ff5722; /* Cor da marca */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.queue-button:hover {
+    background-color: #e64a19; /* Tonalidade mais escura no hover */
+}
+
+
+
+
+
+
