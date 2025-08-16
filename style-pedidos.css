@@ -1,4 +1,4 @@
-/* Importação de fontes e ícones */
+
 * {
     margin: 0;
     padding: 0;
@@ -116,15 +116,15 @@ body {
 }
 
 .queue-status.low {
-    background-color: #4CAF50; /* Verde */
+    background-color: #4CAF50; 
 }
 
 .queue-status.medium {
-    background-color: #FFC107; /* Amarelo */
+    background-color: #FFC107; 
 }
 
 .queue-status.high {
-    background-color: #F44336; /* Vermelho */
+    background-color: #F44336; 
 }
 
 .card-info .address {
@@ -132,7 +132,7 @@ body {
     color: #999;
 }
 
-/* Container para alinhar status e tempo */
+
 .info-row {
     display: flex;
     justify-content: space-between;
@@ -140,14 +140,14 @@ body {
     margin-bottom: 0.25rem;
 }
 
-/* Estilo do tempo estimado de espera */
+
 .estimated-time {
     font-size: 0.9rem;
     color: #666;
     font-weight: 500;
 }
 
-/* Menu inferior */
+
 .bottom-menu {
     display: flex;
     justify-content: space-around;
@@ -176,7 +176,7 @@ body {
 }
 
 .menu-item.active {
-    color: #ff5722; /* Laranja da marca */
+    color: #ff5722; 
 }
 
 .menu-item:hover {
@@ -185,7 +185,7 @@ body {
 
 .queue-button {
     width: 100%;
-    background-color: #ff5722; /* Cor da marca */
+    background-color: #ff5722; 
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -198,7 +198,7 @@ body {
 }
 
 .queue-button:hover {
-    background-color: #e64a19; /* Tonalidade mais escura no hover */
+    background-color: #e64a19; 
 }
 
 

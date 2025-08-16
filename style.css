@@ -1,4 +1,4 @@
-/* Reset Básico */
+
 .cta-link {
     text-decoration: none;
 }
@@ -39,7 +39,7 @@ body {
 }
 
 .cta-button {
-    background-color: #ff5722; /* Laranja vibrante */
+    background-color: #ff5722; 
     color: #fff;
     padding: 1rem 2rem;
     text-transform: uppercase;
@@ -54,7 +54,7 @@ body {
     background-color: #e64a19;
 }
 
-/* Seções e Layout */
+
 section {
     padding: 4rem 1rem;
     text-align: center;
@@ -133,7 +133,6 @@ footer {
     padding: 1rem;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 2.5rem;
