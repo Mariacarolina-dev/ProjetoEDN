@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilaZero Gourmet - Painel do Restaurante</title>
+    <link rel="stylesheet" href="style-painel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                <h2>FilaZero-Empresa</h2>
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li class="active"><a href="#"><i class="fas fa-home"></i>Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-chart-line"></i>Analytics</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i>Configurações</a></li>
+                    <li><a href="#"><i class="fas fa-history"></i>Histórico</a></li>
+                    <li><a href="#"><i class="fas fa-question-circle"></i>Ajuda</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header">
+                <div class="header-info">
+                    <h1>Dashboard</h1>
+                    <p>Gerenciamento de Fila em Tempo Real</p>
+                </div>
+                <div class="user-profile">
+                    <img src="imagens/sabor-da-terra.jpg" alt="Foto do Usuário">
+                    <span>Restaurante Sabor da Terra</span>
+                </div>
+            </header>
+
+            <section class="status-section">
+                <div class="status-card">
+                    <i class="fas fa-users icon-blue"></i>
+                    <div class="card-info">
+                        <h3>Pessoas na Fila</h3>
+                        <p class="count">10</p>
+                    </div>
+                </div>
+                <div class="status-card">
+                    <i class="fas fa-clock icon-orange"></i>
+                    <div class="card-info">
+                        <h3>Espera Estimada</h3>
+                        <p class="count">45 min</p>
+                    </div>
+                </div>
+                <div class="status-card">
+                    <i class="fas fa-chair icon-green"></i>
+                    <div class="card-info">
+                        <h3>Mesa Para 2</h3>
+                        <p class="count">2</p>
+                    </div>
+                </div>
+                <div class="status-card">
+                    <i class="fas fa-chair icon-green"></i>
+                    <div class="card-info">
+                        <h3>Mesa Para 4</h3>
+                        <p class="count">0</p>
+                    </div>
+                </div>
+                <div class="status-card">
+                    <i class="fas fa-chair icon-green"></i>
+                    <div class="card-info">
+                        <h3>Mesa Para 6+</h3>
+                        <p class="count">0</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="queue-list-section">
+                <div class="queue-header">
+                    <h2>Liberar Mesa por Tamanho</h2>
+                    <div class="table-release-buttons">
+                        <button class="action-button primary">
+                            <i class="fas fa-chair"></i> Liberar Mesa 2
+                        </button>
+                        <button class="action-button primary">
+                            <i class="fas fa-chair"></i> Liberar Mesa 4
+                        </button>
+                        <button class="action-button primary">
+                            <i class="fas fa-chair"></i> Liberar Mesa 6+
+                        </button>
+                    </div>
+                </div>
+
+                <div class="queue-header">
+                    <h2>Fila de Espera</h2>
+                    <button class="action-button secondary"><i class="fas fa-user-plus"></i>Adicionar Manualmente</button>
+                </div>
+
+                <ul class="queue-list">
+                    <li class="queue-item">
+                        <div class="item-info">
+                            <div class="client-rating">
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                            </div>
+                            <span class="client-name">Ana Paula</span>
+                            <span class="client-group">Grupo: 2 pessoas</span>
+                            <span class="client-wait-time">Espera: 12 min</span>
+                        </div>
+                        <div class="item-actions">
+                            <button class="action-item-button"><i class="fas fa-user-check"></i> Confirmar Check-in</button>
+                            <button class="action-item-button"><i class="fas fa-user-slash"></i> Não-Apareceu</button>
+                            <button class="action-item-button"><i class="fas fa-times-circle"></i> Remover</button>
+                        </div>
+                    </li>
+                    <li class="queue-item">
+                        <div class="item-info">
+                            <div class="client-rating">
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="client-name">João Silva</span>
+                            <span class="client-group">Grupo: 4 pessoas</span>
+                            <span class="client-wait-time">Espera: 8 min</span>
+                        </div>
+                        <div class="item-actions">
+                            <button class="action-item-button"><i class="fas fa-user-check"></i> Confirmar Check-in</button>
+                            <button class="action-item-button"><i class="fas fa-user-slash"></i> Não-Apareceu</button>
+                            <button class="action-item-button"><i class="fas fa-times-circle"></i> Remover</button>
+                        </div>
+                    </li>
+                    <li class="queue-item">
+                        <div class="item-info">
+                            <div class="client-rating">
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="client-name">Mariana Lima</span>
+                            <span class="client-group">Grupo: 5 pessoas</span>
+                            <span class="client-wait-time">Espera: 5 min</span>
+                        </div>
+                        <div class="item-actions">
+                            <button class="action-item-button"><i class="fas fa-user-check"></i> Confirmar Check-in</button>
+                            <button class="action-item-button"><i class="fas fa-user-slash"></i> Não-Apareceu</button>
+                            <button class="action-item-button"><i class="fas fa-times-circle"></i> Remover</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
