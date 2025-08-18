@@ -61,7 +61,6 @@ body {
     outline: none;
 }
 
-/* Conteúdo principal */
 .content {
     flex-grow: 1;
     overflow-y: auto;
